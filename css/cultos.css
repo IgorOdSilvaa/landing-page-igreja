@@ -1,0 +1,85 @@
+.cultos {
+    text-align: center;
+    padding: 2rem 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-bottom: 2rem; */
+  }
+  
+  .cultos h3 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid white;
+  }
+  
+  .cards-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os cards se ajustem */
+  }
+  
+  .card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    flex: 1 1 calc(50% - 1rem); /* Tamanho dinâmico */
+    margin: 1rem;
+    overflow: hidden;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    padding: 0 1rem 1rem;
+    color: #666;
+  }
+
+  .botao_exibir {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    background-color: #40c9ff;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex: 1 1 100%; /* Cards ocupam toda a largura */
+    }
+  
+    .titulo_cultos h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cultos {
+      padding: 1rem;
+    }
+  
+    .cultos h2 {
+      font-size: 1.5rem;
+    }
+  
+    .card p {
+      font-size: 0.9rem;
+    }
+  }

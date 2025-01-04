@@ -1,0 +1,112 @@
+.heroo {
+    background-image: url('../assets/image/background\ 1.png'); /* Troque pela imagem que desejar */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 5rem;
+    width: 100%;
+    height: 100vh;
+}
+
+.heroo h1 {
+    font-size: 3em;
+    margin: 0;
+    padding: 0.5em 0;
+}
+
+.heroo p {
+    font-size: 1em;
+    margin-bottom: 3.5em;
+    text-align: left;
+    width: 600px;
+}
+
+.action_hero {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.cta-button {
+    background-color: #0056b3;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.cta-button:hover {
+    background-color: #00408a;
+}
+
+/* Informações e Redes Sociais */
+.info-section {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.info-section h2 {
+    margin-bottom: 20px;
+}
+
+.info-section p {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: #333;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+}
+
+img {
+    width: 500px;
+}
+
+/* Responsividade */
+@media (max-width: 790px) {
+    .heroo {
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .heroo h1 {
+        font-size: 1.8em;
+    }
+
+    .heroo p {
+        font-size: 0.8em;
+        width: 80%;
+        text-align: center;
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 0.8;
+    }
+
+    .action_hero {
+        flex-direction: column;
+    }
+}
