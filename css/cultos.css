@@ -16,10 +16,11 @@
   }
   
   .cards-container {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap; /* Permite que os cards se ajustem */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Define duas colunas de tamanho igual */
+    gap: 1rem; /* Espaçamento entre os cards */
+    justify-items: center; /* Centraliza os itens dentro de cada célula */
+    margin-bottom: 2rem;
   }
   
   .card {
@@ -35,7 +36,12 @@
   
   .card img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
     display: block;
   }
   
@@ -61,6 +67,10 @@
   }
   
   @media (max-width: 768px) {
+    .cards-container {
+      grid-template-columns: 1fr; /* Para telas menores, os cards ficam em uma única coluna */
+    }
+
     .card {
       flex: 1 1 100%; /* Cards ocupam toda a largura */
     }

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria por Eventos</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/galery.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><img src="assets/image/logo-tranparente.png" alt=""></a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="">Sobre Nós</a>
+            <a href="">Cultos</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Evento 1 -->
+        <details>
+            <summary>Culto de Jovens - Março 2024 (Clique para Ver)</summary>
+            <div class="gallery">
+            <img src="https://via.placeholder.com/300" alt="Imagem 1">
+            <img src="https://via.placeholder.com/300" alt="Imagem 2">
+            <img src="https://via.placeholder.com/300" alt="Imagem 3">
+            </div>
+        </details>
+
+        <!-- Evento 2 -->
+        <details>
+            <summary>Retiro Espiritual - Abril 2024 (Clique para Ver)</summary>
+            <div class="gallery">
+            <img src="https://via.placeholder.com/300" alt="Imagem 1">
+            <img src="https://via.placeholder.com/300" alt="Imagem 2">
+            <img src="https://via.placeholder.com/300" alt="Imagem 3">
+            <img src="https://via.placeholder.com/300" alt="Imagem 1">
+            <img src="https://via.placeholder.com/300" alt="Imagem 2">
+            <img src="https://via.placeholder.com/300" alt="Imagem 3">
+            <img src="https://via.placeholder.com/300" alt="Imagem 1">
+            <img src="https://via.placeholder.com/300" alt="Imagem 2">
+            <img src="https://via.placeholder.com/300" alt="Imagem 3">
+            <img src="https://via.placeholder.com/300" alt="Imagem 1">
+            <img src="https://via.placeholder.com/300" alt="Imagem 2">
+            <img src="https://via.placeholder.com/300" alt="Imagem 3">
+            </div>
+        </details>
+
+        <!-- Evento 3 -->
+        <details>
+            <summary>Culto Especial - Maio 2024 (Clique para Ver)</summary>
+            <div class="gallery">
+            <img src="https://via.placeholder.com/300" alt="Imagem 1">
+            <img src="https://via.placeholder.com/300" alt="Imagem 2">
+            <img src="https://via.placeholder.com/300" alt="Imagem 3">
+            </div>
+        </details>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <button class="close" id="closeBtn">×</button>
+            <img src="" alt="Imagem Ampliada">
+        </div>
+
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <button class="close" id="closeBtn">×</button>
+            <img src="" alt="Imagem Ampliada">
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container_footer">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Ministério Cristã Universal</h4>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Cultos</a></li>
+                        <li><a href="#">Galeria</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Entre em Contato</h4>
+                    <ul>
+                        <li><a href="#">(11) 98765-3210</a></li>
+                        <li><a href="#">cristauniversal@gmail.com</a></li>
+                        <li><a href="#">@MinistérioCristãUniversal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contribuições</h4>
+                    <ul>
+                        <li><a href="#">Chave PIX</a></li>
+                        <li><a href="#">Agencia Conta</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Siga-nos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const closeBtn = document.getElementById('closeBtn');
+    const lightboxImage = lightbox.querySelector('img');
+
+    // Abrir a imagem no lightbox
+    document.querySelectorAll('.gallery img').forEach(image => {
+      image.addEventListener('click', () => {
+        lightboxImage.src = image.src;
+        lightbox.classList.add('active');
+      });
+    });
+
+    // Fechar o lightbox
+    closeBtn.addEventListener('click', () => {
+      lightbox.classList.remove('active');
+    });
+
+    // Fechar o lightbox ao clicar fora da imagem
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        lightbox.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>

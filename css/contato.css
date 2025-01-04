@@ -2,9 +2,13 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
     align-items: center;
     justify-content: center;
+}
+
+.contato h2 {
+  text-align: center;
 }
 
 /* From Uiverse.io by gharsh11032000 */ 
@@ -106,6 +110,12 @@
   .form-container .form-submit-btn:hover {
     background-color: #fff;
     border-color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    .contato h2 {
+      font-size: 1.2rem;
+    }
   }
   
   
