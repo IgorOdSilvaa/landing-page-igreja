@@ -7,7 +7,7 @@
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    margin: 0 auto;
+    width: 90%;
 }
 
 .card_culto {
@@ -100,10 +100,17 @@
 
 @media (max-width: 480px) {
     .horarios h1 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
-    .cta-text_cult {
+    .cards_culto {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+    }
+
+    .cta-text_culto {
         font-size: 1.2rem;
     }
 
