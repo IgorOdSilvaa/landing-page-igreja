@@ -15,12 +15,13 @@
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/secao_img.css">
     <link rel="stylesheet" href="css/cultos.css">
+    <link rel="stylesheet" href="css/teste.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo"><img src="assets/image/logo-tranparente.png" alt=""></a>
+        <a href="index.html" class="logo"><img src="assets/image/logo-tranparente.png" alt=""></a>
 
         <input type="checkbox" id="check">
         <label for="check" class="icons">
@@ -28,24 +29,25 @@
             <i class='bx bx-x' id="close-icon"></i>
         </label>
         <nav class="navbar">
-            <a href="">Inicio</a>
-            <a href="">Sobre Nós</a>
+            <a href="#hero">Inicio</a>
+            <a href="#sobre_nos">Sobre Nós</a>
             <a href="">Cultos</a>
             <a href="galeria.html">Galeria</a>
             <a href="">Contato</a>
         </nav>
     </header>
     <main>
-        <section class="heroo">
+        <section class="heroo" id="hero">
             <h1>Bem-vindo à Cristã Universal</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor beatae perspiciatis quod sequi exercitationem! Hic, distinctio quos recusandae reprehenderit consequuntur, id repudiandae dolore ducimus saepe qui porro tenetur delectus. Tenetur.</p>
             <div class="action_hero">
                 <button class="button2">Assista ao Culto Online</button>
-                <button class="button2">Venha nos Visitar</button>
+                <a class="button2" href="https://www.google.com/maps/dir//Minist%C3%A9rio+Crist%C3%A3+Universal+Cidade+Tiradentes+-+Rua+Fernando+Ganga+-+Cidade+Tiradentes,+S%C3%A3o+Paulo+-+SP/@-23.6002387,-46.4378854,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94ce6f64394fb9f9:0x8aa25d846d630c9!2m2!1d-46.3966856!2d-23.6003228?entry=ttu&g_ep=EgoyMDI1MDEyNy4wIKXMDSoASAFQAw%3D%3D
+                ">Venha nos Visitar</a>
             </div>
         </section>
 
-        <section class="obras">
+        <section class="obras" id="sobre_nos">
           <div class="container">
             <div class="text-content">
               <h1>Somos uma igreja de apaixonados por Jesus</h1>
@@ -102,81 +104,62 @@
             </div>
         </section>
           
-
         <section class="cultos">
-            <h3 class="tituloa_cultos">Cultos</h3>
-            <div class="cards-container">
-              <!-- Card 1 -->
-              <div class="card">
-                <img src="assets/image/background 1.png" alt="Culto de Celebração">
-                <h3>Culto de Oração</h3>
-                <p>
-                  Nossos cultos de celebração ao Senhor são realizados somente aos domingos. Em dois horários para melhor servir você e sua família: às <strong>10H</strong> e às <strong>18H30</strong>. Em cada culto, buscamos criar um ambiente acolhedor e edificante.
-                </p>
+          <h1>horários</h1>
+          <div class="cards_culto">
+              <div class="card_culto">
+                  <div class="overlay"></div>
+                  <img src="assets/image/campanha_2025/12_2025 (2).jpeg" alt="Cultos presenciais">
+                  <div class="content">
+                      <h2>Cultos Oração</h2>
+                      <p>Campus Chácara Flora - <em>20h</em></p>
+                  </div>
               </div>
-              <!-- Card 2 -->
-              <div class="card">
-                <img src="https://via.placeholder.com/400x300" alt="Células">
-                <h3>Culto de Louvor e Adoração</h3>
-                <p>
-                  Somos uma igreja em células! Isso significa que amamos nos reunir em pequenos grupos em nossa comunidade. Cada célula é como uma pequena família dentro da igreja, onde nos encontramos regularmente.
-                </p>
+              <div class="card_culto">
+                  <div class="overlay"></div>
+                  <img src="assets/image/campanha_2025/12_2025 (3).jpeg" alt="Igreja Online">
+                  <div class="content">
+                      <h2>Cultos de Louvor e Adoração</h2>
+                      <p>Sábado e Domingo - <em>18h</em></p>
+                  </div>
               </div>
-
-              <div class="card">
-                <img src="https://via.placeholder.com/400x300" alt="Células">
-                <h3>Culto de Louvor e Adoração</h3>
-                <p>
-                  Somos uma igreja em células! Isso significa que amamos nos reunir em pequenos grupos em nossa comunidade. Cada célula é como uma pequena família dentro da igreja, onde nos encontramos regularmente.
-                </p>
+          </div>
+          <p class="cta-text_culto">Programe-se e esteja conosco</p>
+          <details>
+            <summary class="cta-button_culto">Confira a nossa programação completa</summary>
+            <div class="container-calendar">
+              <div class="calendar">
+                <div class="header-calendar">
+                  <button id="prevMonth">Anterior</button>
+                  <h2 id="monthYear"></h2>
+                  <button id="nextMonth">Próximo</button>
+                </div>
+                <!-- Cabeçalho com os dias da semana -->
+                <div class="weekdays">
+                  <div class="name_weekdays">Dom</div>
+                  <div class="name_weekdays">Seg</div>
+                  <div class="name_weekdays">Ter</div>
+                  <div class="name_weekdays">Qua</div>
+                  <div class="name_weekdays">Qui</div>
+                  <div class="name_weekdays">Sex</div>
+                  <div class="name_weekdays">Sáb</div>
+                </div>
+                <div class="days" id="days"></div>
               </div>
-
-              <div class="card">
-                <img src="https://via.placeholder.com/400x300" alt="Células">
-                <h3>Culto de Louvor e Adoração</h3>
-                <p>
-                  Somos uma igreja em células! Isso significa que amamos nos reunir em pequenos grupos em nossa comunidade. Cada célula é como uma pequena família dentro da igreja, onde nos encontramos regularmente.
-                </p>
+          
+              <!-- Seção para exibir a lista de eventos -->
+              <div class="event-list">
+                <h3 class="eventos_title">Eventos</h3>
+                <ul id="eventList"></ul>
               </div>
             </div>
-            <details>
-              <summary class="button2">Exibir Calendário</summary>
-              <div class="container-calendar">
-                <div class="calendar">
-                  <div class="header-calendar">
-                    <button id="prevMonth">Anterior</button>
-                    <h2 id="monthYear"></h2>
-                    <button id="nextMonth">Próximo</button>
-                  </div>
-                  <!-- Cabeçalho com os dias da semana -->
-                  <div class="weekdays">
-                    <div class="name_weekdays">Dom</div>
-                    <div class="name_weekdays">Seg</div>
-                    <div class="name_weekdays">Ter</div>
-                    <div class="name_weekdays">Qua</div>
-                    <div class="name_weekdays">Qui</div>
-                    <div class="name_weekdays">Sex</div>
-                    <div class="name_weekdays">Sáb</div>
-                  </div>
-                  <div class="days" id="days"></div>
-                </div>
-            
-                <!-- Seção para exibir a lista de eventos -->
-                <div class="event-list">
-                  <h3>Eventos</h3>
-                  <ul id="eventList"></ul>
-                </div>
-              </div>
-            </details>            
-        </section>
-
-        <section class="galeria">
-
+          </details>
         </section>
 
         <section class="contato"> 
-            <h2>Faça seu pedido de oração, estaremos intercedendo por você e seu pedido!</h2>
+            
             <div class="form-container">
+              <h2>Faça seu pedido de oração, estaremos intercedendo por você e seu pedido!</h2>
                 <form class="form">
                     <div class="form-group">
                     <label for="email">Digite seu nome</label>
@@ -223,7 +206,7 @@
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/ministeriocristauniversal.ct/"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
