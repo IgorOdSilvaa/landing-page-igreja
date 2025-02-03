@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/secao_img.css">
     <link rel="stylesheet" href="css/cultos.css">
+    <link rel="stylesheet" href="css/ministerios.css">
     <link rel="stylesheet" href="css/teste.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -31,9 +32,9 @@
         <nav class="navbar">
             <a href="#hero">Inicio</a>
             <a href="#sobre_nos">Sobre Nós</a>
-            <a href="">Cultos</a>
+            <a href="#cultos">Cultos</a>
             <a href="galeria.html">Galeria</a>
-            <a href="">Contato</a>
+            <a href="#contato">Contato</a>
         </nav>
     </header>
     <main>
@@ -59,9 +60,7 @@
               <a href="#" class="button2">Nossa declaração de fé é essa! ➔</a>
             </div>
             <div class="image-content">
-              <!-- <div class="image-badge">Fé &#183; Comunidade</div> -->
-              <img src="assets/image/Design_sem_nome__1_-removebg-preview.PNG" alt="Imagem 1">
-              <img src="assets/image/Design_sem_nome__1_-removebg-preview.PNG" alt="Imagem 2">
+              <img src="assets/image/comunidade_img.png" alt="Imagem 1">
             </div>
           </div>
         </section>
@@ -103,16 +102,55 @@
               </div>
             </div>
         </section>
+
+        <div class="container_ministerios">
+          <h1>Ministérios</h1>
+          <div class="card_ministerios">
+              <img src="assets/image/campanha_2025/12_2025.jpeg" alt="Geração 5.2">
+              <div class="card_ministerios-content">
+                  <h2>Jovens</h2>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore fuga cumque id cupiditate maxime a nisi sapiente magnam eligendi similique accusamus voluptates, distinctio fugit debitis, amet culpa? Amet, voluptate mollitia!.</p>
+                  <a href="#" class="btn_ministerios">Saiba mais</a>
+              </div>
+          </div>
+
+          <div class="card_ministerios card_2">
+            <div class="card_ministerios-content">
+                <h2>Mulheres</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem fuga eos totam ipsam facilis mollitia cupiditate voluptatibus dolorum blanditiis, libero, vel nihil exercitationem numquam veritatis praesentium quaerat nam esse quis?</p>
+                <a href="#" class="btn_ministerios">Saiba mais</a>
+            </div>
+            <img src="assets/image/campanha_2025/12_2025.jpeg" alt="Geração 5.2">
+          </div>
+
+          <div class="card_ministerios">
+            <img src="assets/image/campanha_2025/12_2025.jpeg" alt="Geração 5.2">
+            <div class="card_ministerios-content">
+                <h2>Crianças</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit pariatur beatae similique debitis quia distinctio. Sint fugit facilis possimus unde, adipisci id voluptate recusandae ex sapiente minus eligendi blanditiis.</p>
+                <a href="#" class="btn_ministerios">Saiba mais</a>
+            </div>
+          </div>
+
+          <div class="card_ministerios card_2">
+            <div class="card_ministerios-content">
+                <h2>Louvor</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea dolore ex, eos consequatur, tempora explicabo recusandae dignissimos labore beatae nesciunt, error praesentium saepe mollitia? Voluptate inventore adipisci quod quae quia.</p>
+                <a href="#" class="btn_ministerios">Saiba mais</a>
+            </div>
+            <img src="assets/image/campanha_2025/12_2025.jpeg" alt="Geração 5.2">
+          </div>
+        </div>
           
-        <section class="cultos">
-          <h1>horários</h1>
+        <section class="cultos" id="cultos">
+          <h1>Horários</h1>
           <div class="cards_culto">
               <div class="card_culto">
                   <div class="overlay"></div>
                   <img src="assets/image/campanha_2025/12_2025 (2).jpeg" alt="Cultos presenciais">
                   <div class="content">
                       <h2>Cultos Oração</h2>
-                      <p>Campus Chácara Flora - <em>20h</em></p>
+                      <p>Quarta-Feira - <em>20h</em></p>
                   </div>
               </div>
               <div class="card_culto">
@@ -156,7 +194,7 @@
           </details>
         </section>
 
-        <section class="contato"> 
+        <section class="contato" id="contato"> 
             
             <div class="form-container">
               <h2>Faça seu pedido de oração, estaremos intercedendo por você e seu pedido!</h2>
@@ -180,10 +218,10 @@
                 <div class="footer-col">
                     <h4>Ministério Cristã Universal</h4>
                     <ul>
-                        <li><a href="#">Sobre Nós</a></li>
-                        <li><a href="#">Cultos</a></li>
-                        <li><a href="#">Galeria</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="#sobre_nos">Sobre Nós</a></li>
+                        <li><a href="#cultos">Cultos</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -205,7 +243,6 @@
                     <h4>Siga-nos</h4>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
                         <a href="https://www.instagram.com/ministeriocristauniversal.ct/"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-whatsapp"></i></a>
                     </div>
